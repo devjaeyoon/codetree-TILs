@@ -2,7 +2,7 @@ function printRect(n, m) {
     for (let i = 0; i < n; i++) {
         let str = '';
         for (let j = 0; j < m; j++) {
-            str += '*';
+            str += '1';
         }
         console.log(str);
     }
