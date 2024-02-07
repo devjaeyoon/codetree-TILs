@@ -1,10 +1,10 @@
 function check2021Date(month, date) {
     if (month <= 12) {
-            if (month === 1) {
-        if (date <= 31) {
-            return 'Yes'
-        }
-        return 'No';
+        if (month === 1) {
+            if (date <= 31) {
+                return 'Yes'
+            }
+            return 'No';
     }
     if (month === 2) {
         if (date <= 28) {
@@ -72,8 +72,8 @@ function check2021Date(month, date) {
         }
         return 'No';
     }
-    return 'No';
     }
+    return 'No';
 }
 
 const [M, D] = require('fs').readFileSync(0).toString().trim().split(' ').map(Number);
