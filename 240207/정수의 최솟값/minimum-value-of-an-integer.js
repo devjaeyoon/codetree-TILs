@@ -1,14 +1,21 @@
 function solution(num1, num2, num3) {
-    let min = num1;
-
-    if (min <= num2 && min <= num3) {
-        return min;
+    if (num1 <= num2) {
+        if (num1 <= num3) {
+            return num1;
+        }
+        return num3;
     }
-    if (min >= num2 && min <= num3) {
+    if (num1 <= num3) {
+        if (num1 <= num2) {
+            return num1;
+        }
         return num2;
     }
-    if (min <= num2 && min >= num3) {
-        return num3;
+    if (num2 <= num3) {
+        if (num2 <= num1) {
+            return num2;
+        }
+        return num1;
     }
 }
 
