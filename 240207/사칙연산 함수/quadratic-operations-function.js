@@ -14,7 +14,7 @@ function solution(num1, op, num2) {
         answer += `${num1} ${op} ${num2} = ${Number(num1) * Number(num2)}`;
     }
 
-    return answer !== '' ? answer : false;
+    return answer !== '' ? answer : 'False';
 }
 
 const fs = require('fs');
