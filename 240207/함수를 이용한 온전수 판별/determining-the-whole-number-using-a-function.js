@@ -2,7 +2,7 @@ function isOnJeonSu(num) {
     if (num % 2 === 0) {
         return false;
     }
-    if (num / 10 === 0.5) {
+    if (num % 10 === 5) {
         return false;
     }
     if (num % 3 === 0 && num % 9 !== 0) {
