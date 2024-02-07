@@ -1,5 +1,6 @@
 function check2021Date(month, date) {
-    if (month === 1) {
+    if (month <= 12) {
+            if (month === 1) {
         if (date <= 31) {
             return 'Yes'
         }
@@ -70,6 +71,8 @@ function check2021Date(month, date) {
             return 'Yes'
         }
         return 'No';
+    }
+    return 'No';
     }
 }
 
