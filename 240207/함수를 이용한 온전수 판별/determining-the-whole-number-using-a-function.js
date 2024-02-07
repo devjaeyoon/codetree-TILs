@@ -20,7 +20,7 @@ function solution(start, end) {
         }
     }
 
-    return snt;
+    return cnt;
 }
 
 const fs = require('fs');
