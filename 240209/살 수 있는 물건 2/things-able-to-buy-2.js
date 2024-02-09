@@ -1,6 +1,6 @@
 const money = Number(require('fs').readFileSync(0).toString().trim());
 
-if (money >= 0 && money < 5000) {
+if (money >= 0 && money < 500) {
   console.log('no');
 }
 if (money >= 500 && money < 1000) {
