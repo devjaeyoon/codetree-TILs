@@ -1,11 +1,12 @@
 let n = Number(require('fs').readFileSync(0).toString().trim());
 
-let cnt = 1;
+let cnt = 0;
+let i = 1;
 
-for (let i = 1; i < n; i++) {
+while (n >= 1) {
     n = Math.floor(n / i);
+    i++;
     cnt++;
-    if (n < 1) break;
 }
 
 console.log(cnt);
