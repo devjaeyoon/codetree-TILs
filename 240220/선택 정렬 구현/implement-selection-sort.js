@@ -2,9 +2,9 @@ const lines = require('fs').readFileSync(0).toString().trim().split('\n');
 const numbers = lines[1].split(' ').map(Number);
 
 function selectionSort(arr) {
-    for (let i = 0; i < arr.length - 1; i++) {
+    for (let i = 0; i < arr.length; i++) {
         let min = i;
-        for (let j = i + 1; j < arr.length - 1; j++) {
+        for (let j = i + 1; j < arr.length; j++) {
             if (arr[j] < arr[min]) {
                 min = j;
             }
