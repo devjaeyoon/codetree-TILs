@@ -3,7 +3,7 @@ const rests = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 let now = a;
 
-while (now !== 0) {
+while (now > 1) {
     rests[now % b]++;
     now = Math.floor(now / b);
 }
