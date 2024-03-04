@@ -6,9 +6,10 @@ let max = lines[0].length;
 for (let i = 1; i < 3; i++) {
   if (lines[i].length < min) {
     min = lines[i].length;
-    continue;
   }
-  max = lines[i].length;
+  if (lines[i].length > max) {
+    max = lines[i].length;
+  }
 }
 
 console.log(max - min);
