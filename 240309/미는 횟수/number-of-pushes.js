@@ -3,7 +3,7 @@ const B = lines[1];
 let A = lines[0];
 let cnt = 0;
 
-while (A !== B && cnt <= A.length) {
+while (A !== B && cnt < A.length) {
     A = A.split('');
     A.push(A.shift());
     A = A.join('');
