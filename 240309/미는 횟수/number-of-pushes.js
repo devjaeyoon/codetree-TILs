@@ -3,14 +3,11 @@ const B = lines[1];
 let A = lines[0];
 let cnt = 0;
 
-while (A !== B && cnt < A.length) {
+while (cnt < A.length && A !== B) {
     A = A.split('');
     A.push(A.shift());
     A = A.join('');
     cnt += 1;
-    if (A === B) {
-        break;
-    }
 }
 
 console.log(cnt === 0? -1 : cnt);
