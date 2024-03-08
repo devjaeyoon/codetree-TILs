@@ -13,4 +13,4 @@ while (cnt < A.length) {
     cnt += 1;
 }
 
-console.log(cnt === 0 ? -1 : cnt);
+console.log(cnt === A.length ? -1 : cnt);
