@@ -22,7 +22,6 @@ if (m === 1) {
         }
         obj[lastNumStr] = 1;
       }
-      console.log(obj);
     }
 
     for (let value of Object.values(obj)) {
