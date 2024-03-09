@@ -17,6 +17,9 @@ if (m === 1) {
         obj[lastNumStr] += 1;
       } else {
         lastNumStr = number;
+        if (Object.keys(obj).includes(number) && obj[number] > 1) {
+          continue;
+        }
         obj[lastNumStr] = 1;
       }
     }
@@ -44,6 +47,9 @@ if (m === 1) {
         obj[lastNumStr] += 1;
       } else {
         lastNumStr = number;
+        if (obj[number] > 1) {
+          continue;
+        }
         obj[lastNumStr] = 1;
       }
     }
