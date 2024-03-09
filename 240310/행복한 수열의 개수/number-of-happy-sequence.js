@@ -17,11 +17,12 @@ if (m === 1) {
         obj[lastNumStr] += 1;
       } else {
         lastNumStr = number;
-        if (Object.keys(obj).includes(number) && obj[number] > 1) {
+        if (obj[number] > 1) {
           continue;
         }
         obj[lastNumStr] = 1;
       }
+      console.log(obj);
     }
 
     for (let value of Object.values(obj)) {
@@ -47,7 +48,7 @@ if (m === 1) {
         obj[lastNumStr] += 1;
       } else {
         lastNumStr = number;
-        if (Object.keys(obj).includes(number) && obj[number] > 1) {
+        if (obj[number] > 1) {
           continue;
         }
         obj[lastNumStr] = 1;
