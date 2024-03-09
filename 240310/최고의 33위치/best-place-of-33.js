@@ -9,8 +9,9 @@ for (let i = 1; i <= N; i++) {
 let max = 0;
 
 for (let i = 0; i < N - 2; i++) {
-  let sum = 0;
   for (let j = 0; j < N - 2; j++) {
+    let sum = 0;
+
     sum +=
       arr[i][j] +
       arr[i + 1][j] +
@@ -21,10 +22,10 @@ for (let i = 0; i < N - 2; i++) {
       arr[i][j + 2] +
       arr[i + 1][j + 2] +
       arr[i + 2][j + 2];
-  }
 
-  if (sum > max) {
-    max = sum;
+    if (sum > max) {
+      max = sum;
+    }  
   }
 }
 
