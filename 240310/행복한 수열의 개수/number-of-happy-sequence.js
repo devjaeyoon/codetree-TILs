@@ -27,6 +27,7 @@ if (m === 1) {
     for (let value of Object.values(obj)) {
       if (value >= m) {
         cnt++;
+        break;
       }
     }
 
@@ -57,6 +58,7 @@ if (m === 1) {
     for (let value of Object.values(obj)) {
       if (value >= m) {
         cnt++;
+        break;
       }
     }
   }
