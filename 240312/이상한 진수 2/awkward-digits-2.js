@@ -12,6 +12,7 @@ for (let i = 0; i < input.length; i++) {
       binNumberString += input[j];
     }
   } else {
+    binNumberString += '0';
     for (let j = i; j < input.length; j++) {
       binNumberString += input[j];
     }
