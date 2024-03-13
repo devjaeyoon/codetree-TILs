@@ -10,16 +10,18 @@ for (let i = 0; i < t; i++) {
   arr.unshift(arr.pop());
 }
 
-const answer = [[], []];
+let str1 = '';
 
-for (let i = 0; i < arr.length; i++) {
-  answer[Math.floor(i / n)].push(arr[i]);
+for (let i = 0; i < n; i++) {
+  str1 += arr[i] + ' ';
 }
 
-for (let i = 0; i < 2; i++) {
-  let str = '';
-  for (let j = 0; j < n; j++) {
-    str += answer[i][j] + ' ';
-  }
-  console.log(str);
+console.log(str1);
+
+let str2 = '';
+
+for (let i = n; i < 2 * n; i++) {
+  str2 += arr[i] + ' ';
 }
+
+console.log(str2);
