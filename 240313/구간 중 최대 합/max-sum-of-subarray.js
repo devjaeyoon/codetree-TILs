@@ -5,8 +5,14 @@ const numbers = lines[1].split(' ').map(Number);
 let max = 0;
 
 for (let i = 0; i <= numbers.length - k; i++) {
-  if (numbers[i] + numbers[i + 1] + numbers[i + 2] > max) {
-    max = numbers[i] + numbers[i + 1] + numbers[i + 2];
+  let sum = 0;
+
+  for (let j = i; j < i + k; j++) {
+    sum += numbers[j];
+  }
+
+  if (sum > max) {
+    max = sum;
   }
 }
 
