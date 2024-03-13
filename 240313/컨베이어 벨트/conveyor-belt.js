@@ -10,7 +10,7 @@ for (let i = 0; i < t; i++) {
   arr.unshift(arr.pop());
 }
 
-for (let i = 0; i < arr.length; i += n) {
+for (let i = 0; i < arr.length - 1; i += n) {
   let str = '';
 
   for (let j = 0; j < n; j++) {
