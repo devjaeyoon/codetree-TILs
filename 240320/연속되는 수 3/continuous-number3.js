@@ -2,7 +2,7 @@ const lines = require('fs').readFileSync(0).toString().trim().split('\n');
 const N = Number(lines[0]);
 
 let isPositiveNumber = Number(lines[1]) > 0;
-let cnt = 0;
+let cnt = 1;
 let max = 0;
 
 for (let i = 2; i <= N; i++) {
