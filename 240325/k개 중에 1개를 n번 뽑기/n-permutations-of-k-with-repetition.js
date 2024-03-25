@@ -11,9 +11,10 @@ if (K === 1 && N !== 1) {
   for (let i = 0; i < N; i++) {
     str += '1 ';
   }
+  console.log(str);
 }
 
-if (N > 1) {
+if (N > 1 && K > 1) {
   function generatePermutationsWithRepetition(n, k) {
     let result = [];
     let path = [];
