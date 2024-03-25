@@ -1,6 +1,10 @@
 const [K, N] = require('fs').readFileSync(0).toString().split(' ').map(Number);
 
 function generatePermutationsWithRepetition(n, k) {
+  if (K === 1) {
+    return [1, 1];
+  }
+
   let result = [];
   let path = [];
 
