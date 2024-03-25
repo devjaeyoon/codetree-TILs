@@ -6,7 +6,8 @@ if (N === 1) {
   }
 }
 
-function generatePermutationsWithRepetition(n, k) {
+if (N > 1) {
+    function generatePermutationsWithRepetition(n, k) {
   let result = [];
   let path = [];
 
@@ -30,4 +31,5 @@ const result = generatePermutationsWithRepetition(K, N);
 
 for (let i = 0; i < result.length; i++) {
   console.log(result[i][0] + ' ' + result[i][1]);
+}
 }
