@@ -1,3 +1,3 @@
 a = input()
 a = float(a)
-print(round(a + 1.5, 2))
+print("{:.2f}".format(a + 1.5))
